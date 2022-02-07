@@ -1,9 +1,10 @@
 import './App.css';
+import NotesApp from "./Components"
 
 function App() {
   return (
     <div className="App">
-      <p>appjs</p>
+      <NotesApp />
     </div>
   );
 }
