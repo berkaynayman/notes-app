@@ -7,19 +7,23 @@ import Button from './Button';
 import styles from './style.module.css'
 
 function NotesApp() {
-  return <div className='notes-app'>
-      <Header />
+  return (
+    <div className='notes-app'>
+        <Header />
       <div>
-        <Input cname={styles.input} />
+          <Input cname={styles.input} />
       </div>
-      <div className={styles.textareaSection}>
-        <TextArea cname={styles.textarea}/>
-        <div className={styles.textareaBottom}>
-          <CircleBtn />
-          <Button />
-        </div>
-      </div>
-  </div>;
+        <form className={styles.textareaSection}>
+          <TextArea cname={styles.textarea} />
+              <div className={styles.textareaBottom}>
+                <CircleBtn />
+                <div>
+                  <Button cname={styles.button} />
+                </div>
+              </div>
+        </form>
+    </div>
+  )
 }
 
 export default NotesApp;

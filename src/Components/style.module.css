@@ -9,27 +9,33 @@
 }
 
 .textareaSection{
-    position: relative;
-    height: 150px;
-    display: flex;
-    flex-direction: column-reverse;
+    background: #fbfafa;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
 }
 
 .textarea{
     padding: 10px;
     height: 100%;
-    border: 1px solid #ccc;
+    border: 0;
     background-color: #fbfafa;
+    resize: none;
 }
 .textarea:focus{
     outline: 0;
 }
 
-
 .textareaBottom{
     display: flex;
     justify-content: space-between;
-    position: absolute;
     width: 100%;
-    background: #fff;
+}
+
+.button{
+    background-color: #eaeaea;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 15px 0px;
 }
