@@ -1,8 +1,13 @@
 import React from 'react';
 
-function TextArea({cname}) {
+function TextArea({cname, note, setNote}) {
+
   return (
-    <textarea className={cname} rows="5" cols="40"
+    <textarea value={note}
+    className={cname}
+    onChange={(e) => setNote(e.target.value)}
+    rows="5"
+    cols="40"
     placeholder='Text Here..'>
     </textarea>
   )

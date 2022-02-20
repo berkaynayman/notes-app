@@ -1,3 +1,8 @@
+*{
+  font-family: 'Karla', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
 html{
   background-color: #eaeaea;
   box-sizing: border-box;
@@ -17,4 +22,8 @@ body,
 
 .notes-app{
   text-align: center;
+}
+
+h2{
+  font-size: 30px;
 }
