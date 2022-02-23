@@ -3,6 +3,7 @@ import Header from './Header'
 import Input from './Input'
 import styles from './style.module.css'
 import Form from './molecules/Form'
+import List from './molecules/List';
 import { delNote, noteSelectors } from '../redux/noteSlice'
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -21,10 +22,11 @@ function NotesApp() {
           <Input cname={styles.input} />
       </div>
         <Form />
+        <List notes={notes}/>
       <ul>
         {
           notes.map(note => <li key={note.id}>
-            {note.note}
+            {note.note} - {note.color}
             <span onClick={() => handleDel(note.id)}>XXXX</span>
             </li>)
         }

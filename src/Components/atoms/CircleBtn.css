@@ -42,19 +42,6 @@ html, body {
     transition: all .3s ease;
 }
 
-.custom-radios #color-1-spn{
-    background-color: #2ecc71;
-}
-.custom-radios #color-2-spn{
-    background-color: #3498db;
-}
-.custom-radios #color-3-spn{
-    background-color: #f1c40f;
-}
-.custom-radios #color-4-spn{
-    background-color: #e74c3c;
-}
-
 input:checked + label span img {
     opacity: 1;
 }

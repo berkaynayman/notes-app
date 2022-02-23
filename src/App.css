@@ -27,3 +27,19 @@ body,
 h2{
   font-size: 30px;
 }
+
+.pink{
+  background-color: hsl(340deg 83% 66%);
+}
+.purple{
+  background-color: hsl(291deg 47% 60%);
+}
+.yellow{
+  background-color: hsl(46deg 100% 65%);
+}
+.blue{
+  background-color: hsl(199deg 91% 64%);
+}
+.green{
+  background-color: hsl(88deg 50% 67%);
+}
