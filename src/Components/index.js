@@ -23,14 +23,6 @@ function NotesApp() {
       </div>
         <Form />
         <List notes={notes}/>
-      <ul>
-        {
-          notes.map(note => <li key={note.id}>
-            {note.note} - {note.color}
-            <span onClick={() => handleDel(note.id)}>XXXX</span>
-            </li>)
-        }
-      </ul>
     </div>
   )
 }

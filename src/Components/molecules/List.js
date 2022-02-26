@@ -1,8 +1,10 @@
 import React from 'react'
-import ListItem from '../atoms/ListItem'
+import Item from '../atoms/Item'
 function List({notes}) {
   return (
-    notes.map(item => <ListItem key={item.id} descriptions={item.note}/>) 
+    <div className='items'>
+      {notes.map(item => <Item item={item}/>)}
+    </div>
   )
 }
 
