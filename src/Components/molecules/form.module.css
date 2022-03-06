@@ -1,0 +1,71 @@
+.form{
+    background: #fbfafa;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px 10px;
+    margin: 20px 0;
+}
+
+.textarea{
+    padding: 10px;
+    height: 100%;
+    border: 0;
+    background-color: #fbfafa;
+    resize: none;
+}
+.textarea:focus{
+    outline: 0;
+}
+
+.formBottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.customRadios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.customRadios div {
+    display: inline-block;
+}
+.customRadios input[type="radio"] {
+    display: none;
+}
+.customRadios label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.customRadios span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 30px;
+}
+.customRadios label img {
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.button{
+    background-color: #2ecc71;
+    color: #fbfafa;
+    font-weight: bold;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 33%);
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}

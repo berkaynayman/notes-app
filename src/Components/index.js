@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header'
-import Input from './Input'
-import styles from './style.module.css'
+import Search from './molecules/Search';
 import Form from './molecules/Form'
 import List from './molecules/List';
 import { delNote, noteSelectors } from '../redux/noteSlice'
@@ -18,9 +17,7 @@ function NotesApp() {
   return (
     <div className='notes-app'>
         <Header />
-      <div>
-          <Input cname={styles.input} />
-      </div>
+        <Search />
         <Form />
         <List notes={notes}/>
     </div>
